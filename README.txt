@@ -48,7 +48,7 @@ sh ReRCoP.sh
         Then concatenate all genome sequences or fake genome sequences to form a multiple-fasta file.
 	# Take note about giving different header names for the fasta file.
 	# If the header file contains blanks, the first column should all be
-	# different. Don't include Inf or NA in the name.
+	# different. Don't include 'Inf' or 'NA' in the name.
 
 >>> Output files:
 .final.summary: A summary of the category of each input gene
@@ -62,12 +62,12 @@ sh ReRCoP.sh
 		 PASS: core genes that are phylogenetically relevant and contain no recombination)
 		Column 5: genomes in which the gene in column 4 is detected as recombinant
 
-.all.concatenated.fasta: the concatenated fasta file of the core genome without removal
+.all.concatenated.fasta: the concatenated fasta file of the core genomes without removal
 .all.concatenated.fasta.log: log file for the above concatenation. The genes are indicated by the gene number label, which can map to the respective gene name in the .final.summary file
 
-.stage1.all.concatenated.fasta: the concatenated fasta file of the core genome after the first stage of removal, say after removing non-phylogenetic genes
+.stage1.all.concatenated.fasta: the concatenated fasta file of the core genomes after the first stage of removal, say after removing non-phylogenetic genes
 .stage1.all.concatenated.fasta.log: log file for the above concatenation. The genes are indicated by the gene number label, which can map to the respective gene name in the .final.summary file (This log is also the log for the below fasta concatenation, because the second stage of removel does no removal of genes but set recombination gene sequences to '-'.)
 
-.stage2.all.concatenated.fasta: the concatenated fasta file of the core genome after the second stage of removal, say after setting the all bases in recombination gene sequences to '-'. Designed to be the input file for downstream phylogenetic studies.
+.stage2.all.concatenated.fasta: the concatenated fasta file of the core genomes after the second stage of removal, say after setting the all bases in recombination gene sequences to '-'. Designed to be the input file for downstream phylogenetic studies.
 
 the msa directory: the aligned sequences of each core gene.
