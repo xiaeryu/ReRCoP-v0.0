@@ -53,7 +53,7 @@ Input files
   
 Cautions
 ---
-Take note about giving different header names for the fasta file. If the header file contains blanks, the first column should all be different. Don't include Inf or NA in the name.
+Take note about giving different header names for the fasta file. If the header file contains blanks, the first column should all be different. Don't include 'Inf' or 'NA' in the name.
 
 Output files
 ---
